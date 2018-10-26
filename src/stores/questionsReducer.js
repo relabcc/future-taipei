@@ -17,10 +17,7 @@ const initialState = fromJS({
 const setSort = createAction(SET_SORT);
 
 const reducer = handleActions({
-  SET_SORT(state, { payload }) {
-    console.log(payload);
-    return state.setIn(['answers', payload.qId], payload.order);
-  }
+  [setSort]: (state, { payload }) => state.setIn(['answers', payload.qId], fromJS(payload.order)),
 }, initialState);
 
 export {
