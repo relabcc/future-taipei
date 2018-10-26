@@ -16,4 +16,5 @@ module.exports = {
     },
     'gatsby-plugin-offline',
   ],
+  pathPrefix: '/future-taipei',
 }

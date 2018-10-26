@@ -17,6 +17,8 @@ const SortableItem = SortableElement(({ children }) =>
     p="1em"
     my="0.25em"
     bg="white"
+    textAlign="center"
+    userSelect="none"
   >{children}</Box>
 );
 

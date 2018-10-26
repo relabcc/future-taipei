@@ -67,6 +67,7 @@ const Box = styled(tag)`
   ${injectProps('verticalAlign')}
   ${injectProps('transform')}
   ${injectProps('transition')}
+  ${injectProps('userSelect')}
   ${({ onClick }) => onClick && 'cursor: pointer;'}
 `;
 
